@@ -6,6 +6,7 @@ Given two routes, algorithm solves the problem of optimizing the routes to yield
 Suppose, given two paths A..B and C..D.
 
 These are all the possible permutations of a,b,c and d.
+
 a b c d
 
 a b d c 	                                                                                                                         
