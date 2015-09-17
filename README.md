@@ -7,7 +7,9 @@ Suppose, given two paths A..B and C..D.
 
 These are all the possible permutations of a,b,c and d.
 
+
 a b c d
+
 a b d c                                                                                                          
 a c b d                                                                                                          
 a c d b                                                                                                         
