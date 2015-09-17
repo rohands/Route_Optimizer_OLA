@@ -42,6 +42,7 @@ Eliminating various paths based on certain constraints like follows:
 Results in the following paths.
 
 a b c d 
+
 a c b d                  
 a c d b                             
 c a b d     
