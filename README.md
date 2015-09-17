@@ -8,30 +8,29 @@ Suppose, given two paths A..B and C..D.
 These are all the possible permutations of a,b,c and d.
 
 a b c d
-
-a b d c 	                                                                                                                         
-a c b d                                                                                                                                      
-a c d b                                                                                                                                       
-a d b c                                                                                                                                          
-a d c b                                                                                                                                         
-b a c d                                                                                                                                      
-b a d c                                                                                                                                     
-b c a d                                                                                                                                    
-b c d a                                                                                                                                         
+a b d c                                                                                                          
+a c b d                                                                                                          
+a c d b                                                                                                         
+a d b c                                                                                                        
+a d c b                                                                                                        
+b a c d                                                                                                        
+b a d c                                                                                                   
+b c a d                                                                                                         
+b c d a                                                                                                      
 b d a c                                                                                                        
-b d c a                                                                                                                                   
-c a b d                                                                                                                                    
-c a d b                                                                                                                                 
-c b a d                                                                                                                               
-c b d a                                                                                                                             
-c d a b                                                                                                                                
-c d b a                                                                                                                                     
-d a b c                                                                                                                                     
-d a c b                                                                                                                                    
-d b a c                                                                                                                                     
-d b c a                                                                                                                                     
-d c a b                                                                                                                                      
-d c b a         
+b d c a                                                                                                     
+c a b d                                                                                                         
+c a d b                                                                                                        
+c b a d                                                                                                       
+c b d a                                                                                                         
+c d a b                                                                                                      
+c d b a                                                                                                      
+d a b c                                                                                                         
+d a c b                                                                                                          
+d b a c                                                                                                        
+d b c a                                                                                                         
+d c a b                                                                                                      
+d c b a     
 
 Eliminating various paths based on certain constraints like follows:
 
@@ -78,17 +77,17 @@ Deviation:
 
 For all the routes, the deviation will be calculated as:
 
-		Difference between ((A and B) + (C and D)) - Total distance of the route.
+		Total distance of the route - Difference between ((A and B) + (C and D)).
 
 		Example : For Route 1 above, deviation will be
-		Difference between ((A and B) + (C and D)) - Total distance of the route 1. ie. (A->C->B->D)
+		Difference between Total distance of the route 1. ie. (A->C->B->D) - ((A and B) + (C and D)) 
 
 
 Thus the most optimized route will be chosen based on following factors:
 1. Maximum Overlapping and 
 2. Minimum Deviation
 
-									PLEASE NOTE
+					PLEASE NOTE
  **(I've given a higher priority to overlapping, which can be changed when needed.)**
 
 							ALGORITHM FOR BEST ROUTE
