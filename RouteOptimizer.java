@@ -272,4 +272,3 @@ public class RouteOptimizer
 			System.out.println(Origins[1]+"----->"+Origins[0]+"----->"+Destinations[1]+"----->"+Destinations[0]);
 	}		
 }
-	
